@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	display: grid;
 	grid-template-columns:1fr;
 	grid-template-rows: 70px 1fr;
-	row-gap: 20px;
+	row-gap: 15px;
 }
 .header {
 	background-color: #000;
@@ -37,20 +37,31 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .content {
 	display: grid;
-	grid-template-columns: 150px 1fr;
+	grid-template-columns: 200px 1fr;
+	column-gap: 15px;
 }
 .content-sidebar {
 	background-color: #000;
 }
 .content-sidebar-item {
-
+	padding: 15px 0 0 15px;
+	line-height: 25px;
 }
+
+.content-sidebar-item li:last-child {
+	margin: 25px 0 0 0;
+}
+
 .content-sidebar-item__link {
 	color: #fff;
+	font-size: 25px;
 }
 .content-page {
 	display: grid;
-	grid-template-rows: 250px 150px 350px;
+	grid-template-rows: 200px auto 350px;
+	row-gap: 15px;
+
+
 }
 .content-page__img {
 }
@@ -60,23 +71,64 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .content-page-info {
 	display: grid;
-	grid-template-columns: 100px 1fr;
+	grid-template-columns: 155px 1fr;
+	column-gap: 15px;
+
+
 }
-.content-page-info__avatar img{
+.content-page-info img{
 	width: 100%;
-	height: 65%;
+	height: 100%;
 }
-.content-page-info-text {}
-.content-page-info-text__name {}
+.content-page-info-text {
+	line-height: 17px;
+}
+.content-page-info-text__name {
+	font-size: 25px;
+	margin: 0 0 25px 0;
+}
 .content-page-info-text__birth {}
 .content-page-info-text__city {}
 .content-page-info-text__education {}
-.content-page-info-text__website {}
-.content-page-feed {}
-.content-page-feed__header {}
-.content-page-feed__textarea {}
-.input {}
-.content-page-feed__button {}
-.content-page-feed__btn {}
+.content-page-info-text__website a{
+	color: #000;
+}
+.content-page-feed {
+	max-width: 600px;
+}
+.content-page-feed__header {
+	font-size: 25px;
+	margin: 0 0 15px 0;
+}
+.content-page-feed__textarea {
+	margin: 0 0 10px 0;
+
+}
+.input {
+	background-color: rgb(215, 208, 208);
+	width: 100%;
+	height: 50px;
+	padding: 10px 0 0 10px;
+	font-size: 15px;
+}
+.content-page-feed__button {
+	text-align: right;
+	margin: 0 0 25px 0;
+
+}
+.content-page-feed__btn {
+	width: 90px;
+	height: 30px;
+	background-color: black;
+	color: white;
+	font-size: 15px;
+}
 .btn {}
-.content-page-feed__footer {}
+.content-page-feed__footer {
+	/* border: 1px solid black; */
+	padding: 15px;
+	background: url('img/page/03.svg') 0 50%/30px 30px no-repeat;
+}
+.content-page-feed__footer p{
+	padding: 0 0 0 35px;
+}

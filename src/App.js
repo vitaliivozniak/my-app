@@ -37,7 +37,7 @@ const App = () => {
 							<p className="content-page-info-text__birth">Date of birth: 3 occtober</p>
 							<p className="content-page-info-text__city">City: Krakov</p>
 							<p className="content-page-info-text__education">Education: </p>
-							<p className="content-page-info-text__website">Web Site:</p>
+							<p className="content-page-info-text__website">Web Site: <a target="_blank" href="https://github.com/vitaliivozniak">https://github.com/vitaliivozniak</a></p>
 						</div>
 					</div>
 					<div className="content-page-feed">
@@ -45,13 +45,13 @@ const App = () => {
 							My posts
 						</div>
 						<div className="content-page-feed__textarea">
-							<textarea placeholder="Your news" className="input"></textarea>
+							<textarea placeholder="Your news..." className="input"></textarea>
 						</div>
 						<div className="content-page-feed__button">
 							<button type="submit" className="content-page-feed__btn btn">Send</button>
 						</div>
 						<div className="content-page-feed__footer">
-							Hey, why nobody love me?
+							<p>Hey, why nobody love me?</p>
 						</div>
 					</div>
 				</div>
