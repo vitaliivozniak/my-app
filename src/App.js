@@ -11,6 +11,7 @@ const App = () => {
 		<div className="App">
 			<header className="header">
 				<img src={logo} alt="" className="header-logo" />
+
 			</header>
 			<div className="content">
 				<div className="content-sidebar">
