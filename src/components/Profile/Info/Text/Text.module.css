@@ -1,0 +1,13 @@
+.text {
+	line-height: 17px;
+}
+.name {
+	font-size: 25px;
+	margin: 0 0 25px 0;
+}
+.birth {}
+.city {}
+.education {}
+.website a{
+	color: #000;
+}

@@ -1,0 +1,16 @@
+.sidebar {
+	grid-area: sidebar;
+	background-color: #000;
+	padding: 15px 0 0 15px;
+	line-height: 25px;
+}
+
+
+.item :last-child {
+	margin: 25px 0 0 0;
+}
+
+.link {
+	color: #fff;
+	font-size: 25px;
+}

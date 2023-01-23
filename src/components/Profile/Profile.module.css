@@ -1,0 +1,7 @@
+
+.profile {
+	display: grid;
+	grid-template-rows: 200px 170px 150px 1fr;
+	row-gap: 15px;
+}
+
