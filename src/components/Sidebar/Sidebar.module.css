@@ -2,15 +2,21 @@
 	grid-area: sidebar;
 	background-color: #000;
 	padding: 15px 0 0 15px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 
-.item :last-child {
+.sidebar :last-child {
 	margin: 25px 0 0 0;
 }
 
 .link {
+	display: block;	
 	color: #fff;
+	font-size: 25px;
+}
+.active{
+	color: rgb(236, 110, 110);
+	display: block;	
 	font-size: 25px;
 }
