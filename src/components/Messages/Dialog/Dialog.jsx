@@ -1,12 +1,15 @@
-import styles from './Messages.module.css';
+import styles from './Dialog.module.css';
+import Item from './Item/Item';
 
 
-const Messages = () => {
+const Dialog = () => {
 	return (
-		<div className={styles.messages}>
-
+		<div className={styles.dialog}>
+			<Item text='Hi' />
+			<Item text='How are you?' />
+			<Item text='I am fine' />
 		</div>
 	)
 }
 
-export default Messages;
+export default Dialog;

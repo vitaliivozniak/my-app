@@ -20,11 +20,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 .App {
 	/* border: 1px solid black; */
+	background-color: rgb(223, 187, 160);
 	max-width: 880px;
-	height: 100%;
 	margin: 0 auto;
+	height: 100%;
 	display: grid;
-	grid-template-columns: 200px 1fr ;
+	grid-template-columns: 200px 1fr;
 	grid-template-rows: 70px 1fr;
 	grid-template-areas: 'header header' 'sidebar content' ;
 	row-gap: 15px;

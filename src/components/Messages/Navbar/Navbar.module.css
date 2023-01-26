@@ -1,12 +1,16 @@
 .navbar {
-	padding: 50px 0 0 20px;
+	display: grid;
+	grid-template-rows: 60px 1fr;
 }
 
+
 .header {
+	padding: 5px 0 0 20px;
+	text-transform: uppercase;
 	font-size: 30px;
-	margin: 0 0 20px 0;
 }
 
 .item{
-	
+	border-right: 1px solid black;
+	padding: 0px 0 0 50px;
 }

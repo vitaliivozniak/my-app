@@ -1,2 +1,5 @@
-.messages{
+.dialog{
+	padding: 0 0 0 30px;
+	display: grid;
+	align-content: center;
 }
