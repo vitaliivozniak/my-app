@@ -3,11 +3,12 @@ import styles from './Messages.module.css';
 import Navbar from './Navbar/Navbar';
 
 
-const Messages = () => {
+const Messages = (props) => {
 	return (
 		<div className={styles.messages}>
-			<Navbar />
-			<Dialog />
+			<header className={styles.header}>Dialogs</header>
+			<Navbar navbarData={props.navbarData} />
+			<Dialog dialogData={props.dialogData} />
 		</div>
 	)
 }

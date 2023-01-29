@@ -2,23 +2,12 @@ import Item from './Item/Item';
 import styles from './Navbar.module.css';
 
 
-let navbarData = [
-	{ id: "/alexander", name: 'Alexander' },
-	{ id: "/john", name: 'John' },
-	{ id: "/igor", name: 'Igor' },
-	{ id: "/karyna", name: 'Karyna' },
-	{ id: "/adam", name: 'Adam' },
-	{ id: "/victoria", name: 'Victoria' },
-	{ id: "/alex", name: 'Alex' },
 
-]
 
-let navbarElements = navbarData.map(item => <Item name={item.name} id={item.id} />)
-
-const Navbar = () => {
+const Navbar = (props) => {
+	let navbarElements = props.navbarData.map(item => <Item name={item.name} id={item.id} />)
 	return (
 		<div className={styles.navbar}>
-			<header className={styles.header}>Dialogs</header>
 			<div className={styles.item}>
 				{navbarElements}
 				{/* <Item name={navbarData[0].name} id={navbarData[0].id} />

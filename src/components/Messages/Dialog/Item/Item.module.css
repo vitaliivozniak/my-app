@@ -1,7 +1,14 @@
 .item{
-	background: url('01.svg') 0 50%/8px 8px no-repeat;
+	/* background: url('01.svg') 0 50%/8px 8px no-repeat; */
+	display: flex;
+	align-items: center;
 
 }
 .text{
-	padding: 30px;
+	padding: 25px;
+}
+.img{
+	width: 40px;
+	height: 40px;;
+	border-radius: 50px;	
 }

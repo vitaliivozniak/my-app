@@ -1,13 +1,10 @@
 import styles from './My_posts.module.css';
 import Post from './Post/Post';
 
-let postData = [
-	{ id: 1, text: 'Hey, why nobody love me?', like: '100' },
-	{ id: 2, text: "It's our new program! Hey!", like: '150' },
-]
 
-let postElements = postData.map(post => <Post message={post.text} like={post.like} />)
-const My_posts = () => {
+
+const My_posts = (props) => {
+	let postElements = props.postData.map(post => <Post message={post.text} like={post.like} />)
 	return (
 		<div className={styles.posts}>
 			{postElements}

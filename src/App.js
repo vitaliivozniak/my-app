@@ -11,7 +11,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 
 
 
-const App = () => {
+const App = (props) => {
 	return (
 		<BrowserRouter>
 			<div className="App" >
@@ -19,8 +19,8 @@ const App = () => {
 				<Sidebar />
 				<div className="content">
 					<Routes>
-						<Route path='/profile' element={<Profile />} />
-						<Route path='/messages/*' element={<Messages />} />
+						<Route path='/profile' element={<Profile postData={props.state.profile.postData} />} />
+						<Route path='/messages/*' element={<Messages navbarData={props.state.messages.navbarData} dialogData={props.state.messages.dialogData} />} />
 						<Route path='/news' element={<News />} />
 						<Route path='/music' element={<Music />} />
 						<Route path='/settings' element={<Settings />} />

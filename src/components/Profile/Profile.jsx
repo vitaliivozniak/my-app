@@ -7,13 +7,13 @@ import My_posts from './My_posts/My_posts';
 
 
 
-const Profile = () => {
+const Profile = (props) => {
 	return (
 		<div className={styles.profile}>
 			<Image />
 			<Info />
 			<New_post />
-			<My_posts />
+			<My_posts postData={props.postData} />
 		</div>
 	)
 }

@@ -1,5 +1,9 @@
 .dialog{
-	padding: 0 0 0 30px;
+	overflow: scroll;
+	height: 500px;
+	grid-area: dialog;
+	padding: 0 30px 0 30px;
 	display: grid;
-	align-content: center;
+	/* align-content: end; */
+	background-color: rgb(210, 214, 177);
 }

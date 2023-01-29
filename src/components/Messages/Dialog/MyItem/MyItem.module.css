@@ -1,21 +1,12 @@
 .item{
-	padding: 20px;
 	/* background: url('01.svg') 0 50%/8px 8px no-repeat; */
-	/* border: 1px solid black; */
-	font-size: 17px;
 	display: flex;
 	align-items: center;
-}
-
-.active{
-	padding: 20px;
-	color: white;
-}
-
-.name{
-	padding: 20px;
+	justify-content: end;
 	/* border: 1px solid black; */
-	color: black;
+}
+.text{
+	padding: 25px;
 }
 .img{
 	width: 40px;
