@@ -4,7 +4,7 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+html,body{height: 100%; width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -22,9 +22,8 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	/* border: 1px solid black; */
 	max-width: 880px;
 	margin: 0 auto;
-	height: 100%;
 	display: grid;
-	grid-template-columns: 200px 1fr;
+	grid-template-columns: 210px 1fr;
 	grid-template-rows: 70px 1fr;
 	grid-template-areas: 'header header' 'sidebar content' ;
 	row-gap: 15px;

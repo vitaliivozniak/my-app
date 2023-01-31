@@ -1,0 +1,25 @@
+.item{
+	/* background: url('01.svg') 0 50%/8px 8px no-repeat; */
+	/* border: 1px solid black; */
+	color:white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.active{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(231, 151, 151);
+}
+
+.name{
+	font-size: 12px;
+	/* border: 1px solid black; */
+}
+.img{
+	width: 40px;
+	height: 40px;;
+	border-radius: 50px;	
+}

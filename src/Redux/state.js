@@ -25,7 +25,18 @@ let state = {
 			{ property: 1, id: 5, text: 'I realy like React' },
 			{ property: 0, id: 7, text: 'It is cool!' },
 		],
-	}
+	},
+	friends: {
+		friendsData: [
+			{ status: 'online', id: "/alexander", name: 'Alexander' },
+			{ status: 'online', id: "/john", name: 'John' },
+			{ status: 'offline', id: "/igor", name: 'Igor' },
+			{ status: 'online', id: "/karyna", name: 'Karyna' },
+			{ status: 'offline', id: "/adam", name: 'Adam' },
+			{ status: 'offline', id: "/victoria", name: 'Victoria' },
+			{ status: 'online', id: "/alex", name: 'Alex' },
+		],
+	},
 }
 
 export default state
