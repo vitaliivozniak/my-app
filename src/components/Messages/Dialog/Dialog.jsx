@@ -11,8 +11,9 @@ const Dialog = (props) => {
 	let newDialogElements = React.createRef();
 
 	let addMessage = () => {
+		debugger;
 		let text = newDialogElements.current.value;
-		alert(text);
+		props.addMessage(text);
 	}
 	return (
 		<div className={styles.dialog}>

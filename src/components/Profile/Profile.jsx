@@ -12,7 +12,7 @@ const Profile = (props) => {
 		<div className={styles.profile}>
 			<Image />
 			<Info />
-			<New_post />
+			<New_post addPost={props.addPost} />
 			<My_posts postData={props.postData} />
 		</div>
 	)

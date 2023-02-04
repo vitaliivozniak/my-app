@@ -3,12 +3,12 @@ import styles from './New_post.module.css';
 
 
 
-const New_post = () => {
+const New_post = (props) => {
 	let newPostElement = React.createRef();
-
 	let addPost = () => {
+		debugger;
 		let text = newPostElement.current.value;
-		alert(text);
+		props.addPost(text);
 	}
 	return (
 		<div className={styles.newpost}>

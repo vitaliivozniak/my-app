@@ -18,12 +18,12 @@ let state = {
 		dialogData: [
 			{ property: 1, id: 1, text: 'Hi' },
 			{ property: 1, id: 2, text: 'How are you?' },
-			{ property: 0, id: 1, text: 'Yo)' },
-			{ property: 0, id: 3, text: 'I am fine' },
-			{ property: 0, id: 4, text: 'And you?' },
+			{ property: 0, id: 3, text: 'Yo)' },
+			{ property: 0, id: 4, text: 'I am fine' },
+			{ property: 0, id: 5, text: 'And you?' },
 			{ property: 1, id: 6, text: 'I stady' },
-			{ property: 1, id: 5, text: 'I realy like React' },
-			{ property: 0, id: 7, text: 'It is cool!' },
+			{ property: 1, id: 7, text: 'I realy like React' },
+			{ property: 0, id: 8, text: 'It is cool!' },
 		],
 	},
 	friends: {
@@ -39,4 +39,23 @@ let state = {
 	},
 }
 
+
+export let addPost = (post) => {
+	let newPost = {
+		id: 5,
+		text: post,
+		like: 50,
+	};
+	state.profile.postData.push(newPost);
+}
+
+export let addMessage = (message) => {
+	debugger;
+	let newMessage = {
+		property: 0,
+		id: 9,
+		text: message,
+	};
+	state.messages.dialogData.push(newMessage)
+}
 export default state
