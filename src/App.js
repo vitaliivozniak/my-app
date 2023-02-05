@@ -20,8 +20,8 @@ const App = (props) => {
 				<Sidebar friendsData={props.state.friends.friendsData} />
 				<div className="content">
 					<Routes>
-						<Route path='/profile' element={<Profile postData={props.state.profile.postData} addPost={props.addPost} />} />
-						<Route path='/messages/*' element={<Messages navbarData={props.state.messages.navbarData} dialogData={props.state.messages.dialogData} addMessage={props.addMessage} />} />
+						<Route path='/profile' element={<Profile profileData={props.state.profile} addPost={props.addPost} updateNewPostText={props.updateNewPostText} />} />
+						<Route path='/messages/*' element={<Messages navbarData={props.state.messages.navbarData} dialogData={props.state.messages.dialogData} newMessageText={props.state.messages.newMessageText} updateNewNessageText={props.updateNewNessageText} addMessage={props.addMessage} />} />
 						<Route path='/news' element={<News />} />
 						<Route path='/music' element={<Music />} />
 						<Route path='/settings' element={<Settings />} />

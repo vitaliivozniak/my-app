@@ -11,16 +11,18 @@ const Dialog = (props) => {
 	let newDialogElements = React.createRef();
 
 	let addMessage = () => {
-		debugger;
+		props.addMessage();
+	}
+	let onMessageChage = () => {
 		let text = newDialogElements.current.value;
-		props.addMessage(text);
+		props.updateNewNessageText(text);
 	}
 	return (
 		<div className={styles.dialog}>
 			<div className={styles.text}>{dialogElements}</div>
 			<div className={styles.footer}>
 				<div className={styles.textarea}>
-					<textarea ref={newDialogElements} placeholder="Your messsage..." className={styles.input}></textarea>
+					<textarea ref={newDialogElements} placeholder="Your messsage..." className={styles.input} value={props.newMessageText} onChange={onMessageChage}></textarea>
 				</div>
 				<div className={styles.button}>
 					<button onClick={addMessage} type="submit" className={styles.btn}>Send</button>

@@ -12,8 +12,8 @@ const Profile = (props) => {
 		<div className={styles.profile}>
 			<Image />
 			<Info />
-			<New_post addPost={props.addPost} />
-			<My_posts postData={props.postData} />
+			<New_post addPost={props.addPost} updateNewPostText={props.updateNewPostText} newPostText={props.profileData.newPostText} />
+			<My_posts postData={props.profileData.postData} />
 		</div>
 	)
 }

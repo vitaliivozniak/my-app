@@ -1,9 +1,12 @@
+import { rerenderEntireTree } from "../render";
+
 let state = {
 	profile: {
 		postData: [
 			{ id: 1, text: 'Hey, why nobody love me?', like: '100' },
 			{ id: 2, text: "It's our new program! Hey!", like: '150' },
 		],
+		newPostText: '',
 	},
 	messages: {
 		navbarData: [
@@ -25,6 +28,7 @@ let state = {
 			{ property: 1, id: 7, text: 'I realy like React' },
 			{ property: 0, id: 8, text: 'It is cool!' },
 		],
+		newMessageText: '',
 	},
 	friends: {
 		friendsData: [
@@ -40,22 +44,41 @@ let state = {
 }
 
 
-export let addPost = (post) => {
+export let addPost = () => {
 	let newPost = {
 		id: 5,
-		text: post,
+		text: state.profile.newPostText,
 		like: 50,
 	};
 	state.profile.postData.push(newPost);
+	state.profile.newPostText = '';
+
+	rerenderEntireTree(state);
+
 }
 
-export let addMessage = (message) => {
-	debugger;
+export let updateNewPostText = (text) => {
+	state.profile.newPostText = text;
+	rerenderEntireTree(state);
+}
+
+
+export let addMessage = () => {
 	let newMessage = {
 		property: 0,
 		id: 9,
-		text: message,
+		text: state.messages.newMessageText,
 	};
+
 	state.messages.dialogData.push(newMessage)
+	state.messages.newMessageText = '';
+
+	rerenderEntireTree(state);
 }
+
+export let updateNewNessageText = (text) => {
+	state.messages.newMessageText = text;
+	rerenderEntireTree(state);
+}
+
 export default state
